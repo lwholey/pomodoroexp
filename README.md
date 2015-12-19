@@ -1,6 +1,4 @@
-# pomodoroexp
+# Pomodoro Di Piccole
 
-A simple Pomodoro timer for Exponent. Feel free to fork and customize to
-your liking!
-
-![Demo gif](https://github.com/exponentjs/pomodoroexp/blob/master/demo.gif)
+A copy of Pomodoro timer for Exponent - forked and customized to
+my liking (use seconds instead of minutes)

@@ -19,10 +19,10 @@ import padNumber from './padNumber';
 import todayAtMidnight from './todayAtMidnight';
 import range from './range';
 
-const DEFAULT_WORK_DURATION = 0.25;
-const DEFAULT_BREAK_DURATION = 0.15;
+const DEFAULT_WORK_DURATION = 25.0 / 60.0;
+const DEFAULT_BREAK_DURATION = 8.0 / 60.0;
 const ONE_SECOND = 1000;
-const TOMATO = '🍅';
+const TOMATO = '<U+1F345>'
 
 class PomodoroApp extends React.Component {
 
@@ -74,19 +74,19 @@ class PomodoroApp extends React.Component {
           <View style={styles.menuHeaderOverlay} />
 
           <Text style={styles.menuHeaderText}>
-            Pomodoro!
+            Pomodoro Di Piccole 
           </Text>
         </View>
 
         <View style={styles.menuOptions}>
           {this._renderOptions({
             title: 'Work',
-            options: [5, 10, 15, 20],
+            options: [15.0/60.0, 20.0/60.0, 25.0/60.0, 30.0/60.0],
             stateKey: 'workDuration'})}
 
           {this._renderOptions({
             title: 'Break',
-            options: [1, 2.5, 5, 7.5],
+            options: [6.0/60.0, 8.0/60.0, 10.0/60.0, 12.0/60.0],
             stateKey: 'breakDuration'})}
         </View>
 
@@ -108,7 +108,7 @@ class PomodoroApp extends React.Component {
           onPress={() => this.setState((state) => { state[stateKey] = option; return state; })}>
           <View style={[styles.optionButton, isSelected && styles.optionButtonSelected]}>
             <Text style={[styles.optionText, isSelected && styles.optionTextSelected]}>
-              {option} min.
+              {option * 60.0} sec.
             </Text>
           </View>
         </TouchableWithoutFeedback>

@@ -1,11 +1,11 @@
 {
-  "name": "pomodoro",
+  "name": "Pomodoro Di Piccole",
   "version": "1.0.0",
-  "description": "A Pomodoro timer!",
+  "description": "A copy of Pomodoro timer with shorter times",
   "main": "main.js",
   "author": "brentvatne@gmail.com",
   "exp": {
-    "name": "Pomodoro",
+    "name": "Pomodoro Di Piccole",
     "primaryColor": "#9D3131",
     "iconUrl": "https://s3.amazonaws.com/pomodoro-exp/icon.png"
   },

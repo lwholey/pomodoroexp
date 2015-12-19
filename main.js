@@ -22,7 +22,7 @@ import range from './range';
 const DEFAULT_WORK_DURATION = 25.0 / 60.0;
 const DEFAULT_BREAK_DURATION = 8.0 / 60.0;
 const ONE_SECOND = 1000;
-const TOMATO = '<U+1F345>'
+const TOMATO = '\u1F345';
 
 class PomodoroApp extends React.Component {
 
